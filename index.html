@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- <script>
+      import { PowerGlitch } from 'powerglitch'
+      PowerGlitch.glitch('.glitch')
+  </script> -->
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -26,7 +30,7 @@
     <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
         <div class="container-xl">
           <a class="navbar-brand" aria-current="page" href="index.html">Stef with an F</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,17 +94,25 @@
         </div>
       </nav>
 
+    <!-- background video -->
+    <video autoplay muted loop id="indexVideo">
+      <source src="/img/BGvideo.mp4" type="video/mp4">
+    </video>
+    
+
     <!-- main content -->
     <main class="content container-xl wrapper flex-grow-1">
-
+        
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col-10 col-md-8 col-lg-6">
+              
               <img src="img/mst3k.jpg" class="d-block mx-lg-auto img-fluid" alt="Picture of Me" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stefanie Sequeira</h1>
-              <p class="lead">Product designer, hero messaging, super cool very nice awesome job, wrap onto two lines even</p>
+              <h1 class="display-1 fw-bold text-body-emphasis lh-1 mb-3">Stefanie Sequeira</h1>
+              <p class="lead">Product designer, hero messaging</p>
+              <button class="btn btn-secondary btn-sm" onclick="pauseVideo()">Pause Video</button>
               <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
@@ -158,9 +170,29 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/react-motion/build/react-motion.js"></script>
+    <!-- <script src="https://unpkg.com/react-motion/build/react-motion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
-<script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script> -->
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+
+    <script>
+      // Get the video
+      var video = document.getElementById("indexVideo");
+      
+      // Get the button
+      var btn = document.getElementById("myBtn");
+      
+      // Pause and play the video, and change the button text
+      function pauseVideo() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
 
 
   </body>
