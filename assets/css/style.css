@@ -133,6 +133,7 @@ h2, h3, h4 a {
 
 h2, h3, h4 a:hover {
   color: var(--bs-link-hover-color);
+  transition: all .2s ease;
 }
 
 .list-group, .list-group-item {
