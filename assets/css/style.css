@@ -56,6 +56,7 @@
     --background-tint: rgba(8,60,99,0.4);
 
     color-scheme: dark;
+    --bg-body-secondary: #161e27;
     --bs-body-color: #dee2e6;
     --bs-body-color-rgb: 222, 226, 230;
     --bs-body-bg: #083c63;
@@ -105,7 +106,42 @@
     --bs-border-radius-2xl: var(--bs-border-radius-xxl);
 }
 
-/* this is for SVG handwriting titles, not icons */
+.header-bg-gradient {
+  background: linear-gradient(rgba(22,30,39,0.6), rgba(22,30,39,0.2) 40%, rgba(22,30,39,0));
+}
+
+.footer-bg-gradient {
+  background: linear-gradient(rgba(22,30,39,0), rgba(22,30,39,0.6));
+}
+
+hr {
+margin: 0;
+}
+
+.bg-logos {
+  background-color: var(--bg-body-secondary);
+}
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0);
+  --bs-navbar-toggler-border-radius: 0;
+  --bs-navbar-toggler-focus-width: 0.1rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+}
+
+/* this is for SVG handwriting titles only, not icons */
 .svg-color {
   stroke: var(--bs-secondary-color-tint);
 }
@@ -125,6 +161,7 @@ h1, h2, h3, h4, h5, h6,
 .navbar, footer {
   /* https://fonts.google.com/specimen/Anonymous+Pro */
   font-family: "Anonymous Pro", system-ui;
+  margin: 0;
 }
 
 h2, h3, h4 a {
@@ -214,3 +251,50 @@ h2, h3, h4 a:hover {
     margin-bottom: 4em;
     overflow: hidden;
     }
+
+
+
+/* ----- WORK PAGE ----- */
+
+/* Container styles */
+.logo-container {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    .logos {
+      /* width: 100%; */
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        padding-right: 2em;
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
