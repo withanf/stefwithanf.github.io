@@ -222,7 +222,13 @@ h2, h3, h4 a:hover {
 
 .sticky-sidebar {
     position: sticky;
-    top: 6em;
+    top: 2em;
+}
+
+@media screen and (max-width: 768px){
+  .sticky-sidebar{
+    display: none;
+  }
 }
 
 #case-title {
@@ -263,6 +269,12 @@ h2, h3, h4 a:hover {
           cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
+    /* check to see if this works */
+    @media (prefers-reduced-motion) {
+      animation-play-state: paused;
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+    }
   }
 }
 
@@ -287,3 +299,38 @@ h2, h3, h4 a:hover {
     opacity: 1;
   }
 }
+
+.card {
+  /* border: none; */
+  border-radius: 0;
+  background-color: var(--bs-secondary-bg);
+}
+
+.card a, h3 {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.card-pic {
+  height: 12em;
+  width: 100%;
+  background-image: var(--card-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:hover {
+  color: white;
+  transition: all .2s ease;
+  background-image: var(--card-img-hover);
+}
+/* 
+.card {
+  background-image: var(--card-img);
+}
+
+.card p{
+  margin: 1em;
+    background-color: rgb(14, 14, 94);
+} */
+
