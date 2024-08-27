@@ -140,6 +140,15 @@ margin: 0;
   fill: var(--bs-secondary-color);
 }
 
+.icon-color:hover {
+  fill: white;
+  transition: all .2s ease;
+}
+
+i:hover {
+  color: white;
+}
+
 /* fonts */
 body, button {
   /* https://fonts.google.com/specimen/Rubik */
@@ -251,6 +260,10 @@ h2, h3, h4 a:hover {
 
 /* ----- WORK PAGE ----- */
 
+#logo-marquee {
+  user-select: none;
+}
+
 /* Container styles */
 .logo-container {
   overflow: hidden;
@@ -269,18 +282,8 @@ h2, h3, h4 a:hover {
           cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
-    /* check to see if this works */
-    @media (prefers-reduced-motion) {
-      animation-play-state: paused;
-      -webkit-animation-play-state: paused;
-      -moz-animation-play-state: paused;
-    }
   }
 }
-
-/* .slider:hover {
-  animation-play-state: paused;
-} */
 
 @keyframes slidein {
   from {
@@ -301,9 +304,14 @@ h2, h3, h4 a:hover {
 }
 
 .card {
-  /* border: none; */
+  --text-bg-color: rgba(14, 14, 94, 0.9);
+  border: none;
   border-radius: 0;
-  background-color: var(--bs-secondary-bg);
+  /* background-color: var(--bs-secondary-bg); */
+  min-height: 20em;
+  background-image: var(--card-img);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card a, h3 {
@@ -311,26 +319,18 @@ h2, h3, h4 a:hover {
   color: inherit; 
 }
 
-.card-pic {
-  height: 12em;
+.card p {
+  background-color: var(--text-bg-color);
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  margin: 0;
   width: 100%;
-  background-image: var(--card-img);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card:hover {
+  --text-bg-color: var(--text-bg-hover);
+  background-image: var(--card-img-hover);
   color: white;
   transition: all .2s ease;
-  background-image: var(--card-img-hover);
 }
-/* 
-.card {
-  background-image: var(--card-img);
-}
-
-.card p{
-  margin: 1em;
-    background-color: rgb(14, 14, 94);
-} */
-

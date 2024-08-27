@@ -1,0 +1,155 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!-- color modes, idk why this is above the meta elements but that's how it is in the bs examples -->
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stef with an F</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- <script>
+    import { PowerGlitch } from 'powerglitch'
+    PowerGlitch.glitch('.glitch')
+</script> -->
+</head>
+
+  <body class="d-flex flex-column min-vh-100 p-0 container-fluid">
+    <!-- NOTE: min-vh-100 in body, wrapper flex-grow-1 in the content. This puts footer at bottom of page -->
+
+    <!-- skip link -->
+    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+
+    <!-- navigation -->
+    <header class="mb-auto"><nav class="navbar navbar-expand-lg header-bg-gradient p-3">
+      <div class="container-fluid mb-0">
+        <a class="navbar-brand"  href="/index.html">Stef with an F</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/work.html">Work</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Fun
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/work/case-template.html">Case Studies</a></li>
+                <li><a class="dropdown-item" href="#">Hobbies</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <!-- color mode setting, disabled for now -->
+          <!-- <div class="dropdown bd-mode-toggle">
+            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    aria-label="Toggle theme (auto)">
+              <span id="bd-theme-text" class="bi my-1 theme-icon-active"><use>Site Theme</use></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                  <i class="bi bi-sun pe-2"></i>
+                  Light
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                  <i class="bi bi-moon pe-2"></i>
+                  Dark
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                  <i class="bi bi-circle-half pe-2"></i>
+                  Auto
+                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </nav></header>
+
+    <!-- main content -->
+    <main id="content" class="content container-fluid p-0 wrapper flex-grow-1">
+      
+      <section class="container-xxl m-auto row row-cols-1 row-cols-sm-2 align-items-center mt-5">
+        <div class="col col-md-4 svg-color">
+          <h1 hidden>About Me</h1>
+          <svg width="171" height="74" viewBox="0 0 171 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.4454 4.72916C25.4454 22.8333 31.1049 40.635 31.3049 58.6582M31.3049 58.6582C31.3085 58.9825 31.3104 59.3069 31.3104 59.6313V62.4009C31.3104 61.1487 31.3462 59.8383 31.4335 58.5022M31.3049 58.6582C30.2947 59.9016 29.5411 61.2718 29.2739 62.8082C28.5184 67.1525 34.1829 66.7898 36.6051 65.2519C41.9486 61.8592 45.2548 50.696 41.8183 45.0505C39.9492 41.9798 36.9455 41.4864 35.0167 44.7654C32.7027 48.6991 31.7435 53.7622 31.4335 58.5022M31.3049 58.6582C31.3474 58.606 31.3902 58.554 31.4335 58.5022M31.4335 58.5022C33.4629 56.0766 36.4487 54.1359 38.6415 52.3816M51.1045 46.5167C50.2333 46.5516 49.517 46.8248 48.9426 47.2734M48.9426 47.2734C43.7082 51.3615 50.2474 70.0123 58.5985 55.5585C61.1551 51.1337 58.2206 45.5342 52.978 45.1727C51.499 45.0707 49.1963 45.4966 48.9459 47.2498C48.9447 47.2577 48.9436 47.2656 48.9426 47.2734ZM48.9426 47.2734C48.6103 49.7336 51.69 49.2878 53.3038 49.4492M64.3005 47.2498C64.3005 49.2964 66.2931 65.0846 69.5953 63.0526C73.5867 60.5963 75.2973 55.0194 75.2973 50.6711C75.2973 48.0407 76.9307 55.8035 78.5963 57.8393C80.4009 60.0449 82.0911 60.2501 84.0947 58.2466M87.0271 9.86096C87.4385 26.3169 87.668 43.8623 90.6927 60.1201C91.0786 62.1941 91.8331 64.7761 91.8331 66.881C91.8331 68.8193 91.0394 63.0861 90.6927 61.179M80.4291 47.2498C86.5205 43.1889 93.9571 39.6535 98.757 34.0538M117 16C119.517 24.8101 117.818 29.424 117.818 38.534V62.6453C117.818 50.1464 118.831 35.3068 121.117 22.9999C121.117 17.5944 122.149 15.5856 122.5 9.61684C124.579 3.50009 124.107 20.1925 124.579 28.2703C124.993 35.3616 125.384 44.1798 127.756 50.9562C129.312 55.4028 130.677 56.0849 130.973 50.7525C131.448 42.2002 132.387 34.3601 133.946 25.9081C134.851 21.0051 136.146 15.4533 136.146 10.4312V9.00571C136.146 13.118 136.23 17.202 136.553 21.3058C137.53 33.7313 139.73 46.0277 140.544 58.4502C140.835 62.8867 141.278 67.2401 141.278 71.6871M146.5 53.8479C145.933 53.159 146.497 52.2338 147.597 51.2168M147.597 51.2168C150.011 48.9856 155.007 46.3126 156.306 44.7247C158.295 42.2939 155.906 40.6997 154.066 38.8597C151.248 36.0409 148.389 44.41 147.597 51.2168ZM147.597 51.2168C147.229 54.3753 147.306 57.1975 148.039 58.4095C155.291 70.413 162.474 57.1789 169.136 53.8479M12 7C11.0191 26.2021 5.66851 45.1728 2.3376 64.0514C1.50311 68.7811 2.22476 73.6344 4.40141 66.0593M13 12.2769V2.50031C13 0.0270809 13.6957 7.40269 14.2604 9.8081C16.3421 18.6748 18.0395 27.6302 19.7869 36.5704C21.7031 46.3745 22.7107 57.3239 26.9616 66.4928C29.0798 71.0616 27.5312 68.5419 26.089 65.604M4 49C8.93721 42.0818 16.7487 40.2989 24 37" stroke-width="3" stroke-linecap="round"/>
+            </svg>  
+        </div>
+        <div class="col col-md-6 p-5 pe-0">
+          <h4>I have 6 years of experience designing for Fortune 100, startup, and public sector companies. Here are some samples of my work.</h4>
+        </div>
+      </section>
+
+      <section class="container-xxl">
+        <h2>Case studies</h2>
+
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid d-flex flex-wrap justify-content-between p-3 pt-5 mt-auto footer-bg-gradient">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; Stefanie. <a href="https://github.com/withanf/withanf.github.io/issues" target="_blank">Report a bug</a></span>
+      </div>
+
+      <!-- <button class="btn btn-secondary btn-sm" onclick="pauseVideo()" aria-label="Pause">Pause Video</button> -->
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li><a class="text-body-secondary" href="mailto:stefaniesequeira@pm.me" target="_blank"><i class="bi bi-envelope-fill fs-4"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary fs-5" href="https://bsky.app/profile/stefwithanf.bsky.social" target="_blank"><svg fill="none" viewBox="0 0 64 57" style="width: 26px; height: 24px;" class="icon-color"><path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://dribbble.com/stefaniewithanf" target="_blank"><i class="bi bi-dribbble fs-4"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/stefaniesequeira/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a></li>
+      </ul>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+
+    var anim = document.querySelectorAll('.slider');
+    document.getElementById('play_stop').onclick = function () {
+        for (var i = 0; i < anim.length; i++) {
+            if (anim[i].style.animationPlayState == 'paused') {
+                anim[i].style.animationPlayState = 'running';
+            }
+            else {
+                anim[i].style.animationPlayState = 'paused';
+            }
+        }
+    }
+
+    </script>
+
+  </body>
+
+</html>
