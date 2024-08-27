@@ -1,4 +1,4 @@
-/* ----- ROOT VARIABLES ----- */
+/* --------------- ROOT --------------- */
 
 :root,
 [data-bs-theme=light] {
@@ -181,15 +181,6 @@ h2, h3, h4 a:hover {
   border-radius: 0;
 }
 
-/* ----- INDEX PAGE ----- */
-
-.index-background {
-  /* background: var(--background-tint); */
-  background: url("/img/stef.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 /* #loading {
   position: fixed;
   display: flex;
@@ -208,6 +199,17 @@ h2, h3, h4 a:hover {
   z-index: 100;
 } */
 
+
+
+/* --------------- INDEX PAGE --------------- */
+
+.index-background {
+  /* background: var(--background-tint); */
+  background: url("/img/stef.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* #indexVideo {
   position: fixed;
   right: 0%;
@@ -218,16 +220,9 @@ h2, h3, h4 a:hover {
   z-index: -1;
 } */
 
-/* .test-text {
-    position: relative;
-    top: -10em;
-    left: 8em;
-    transform: rotate(8deg);
-} */
 
 
-
-/* ----- CASE STUDY TEMPLATE ----- */
+/* --------------- CASE STUDY TEMPLATE --------------- */
 
 .sticky-sidebar {
     position: sticky;
@@ -258,13 +253,12 @@ h2, h3, h4 a:hover {
 
 
 
-/* ----- WORK PAGE ----- */
+/* --------------- WORK PAGE --------------- */
 
 #logo-marquee {
   user-select: none;
 }
 
-/* Container styles */
 .logo-container {
   overflow: hidden;
   .slider {
@@ -273,7 +267,6 @@ h2, h3, h4 a:hover {
     margin-top: 1em;
     margin-bottom: 1em;
     .logos {
-      /* width: 100%; */
       display: inline-block;
       margin: 0px 0;
       .fab {
@@ -307,7 +300,6 @@ h2, h3, h4 a:hover {
   --text-bg-color: rgba(14, 14, 94, 0.9);
   border: none;
   border-radius: 0;
-  /* background-color: var(--bs-secondary-bg); */
   min-height: 20em;
   background-image: var(--card-img);
   background-repeat: no-repeat;
@@ -332,5 +324,54 @@ h2, h3, h4 a:hover {
   --text-bg-color: var(--text-bg-hover);
   background-image: var(--card-img-hover);
   color: white;
-  transition: all .2s ease;
+  transition: all .4s ease;
+}
+
+
+
+/* --------------- ABOUT PAGE --------------- */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 40px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+ul.timeline > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  color: var(--bs-body-color);
+  font-weight: 100;
+  font-size: smaller;
+  margin-left: 0.3em;
 }
