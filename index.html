@@ -4,7 +4,7 @@
 
   <head>
     <!-- color modes, idk why this is above the meta elements but that's how it is in the bs examples -->
-    <script src="../assets/js/color-modes.js"></script>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
 
   </head>
 
-  <body class="d-flex flex-column min-vh-100 p-0 container-fluid index-background">
+  <body class="d-flex flex-column min-vh-100 p-0 container-fluid">
     <!-- NOTE: min-vh-100 in body, wrapper flex-grow-1 in the content. This puts footer at bottom of page -->
 
     <!-- skip link -->
@@ -97,14 +97,18 @@
       </nav></header>
 
     <!-- background video -->
-    <!-- <video autoplay muted loop id="indexVideo">
+    <video autoplay muted id="indexVideo" class="desktop translate-middle top-50 start-50">
       <source src="/img/BGvideo.mp4" type="video/mp4">
-    </video> -->
+    </video>
+
+    <video autoplay muted id="indexVideo" class="mobile">
+      <source src="/img/BGvideo-mobile.mp4" type="video/mp4">
+    </video>
     
     <!-- main content -->
     <main class="content container-xl wrapper">
       <div class="container-fluid">
-        <div class="position-absolute top-50 start-50 translate-middle svg-color">
+        <div class="position-absolute top-50 start-50 translate-middle svg-color text-center ">
           <h1 hidden>Stefanie</h1>
           <svg width="100%" viewBox="0 0 120 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="">
             <g clip-path="url(#clip0_728_74)">
@@ -116,7 +120,9 @@
             </clipPath>
             </defs>
             </svg>
-            <h4 class="text-center my-4"><a href="work.html">Product Designer</a> / <a href="#">Advocate & Mentor</a> / <a href="#">Learner & Maker</a></h3>
+            <h4 class="text-center my-4"><a href="work.html">Product Designer</a> specializing in UX, design strategy, and mentorship.</h4>
+            <br>
+              <button class="btn btn-primary btn-lg mx-auto">Contact Me</button>                      
           </div>
         </div>
       </main>

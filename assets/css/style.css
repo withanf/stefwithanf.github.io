@@ -204,21 +204,39 @@ h2, h3, h4 a:hover {
 /* --------------- INDEX PAGE --------------- */
 
 .index-background {
-  /* background: var(--background-tint); */
+  background: var(--background-tint);
   background: url("/img/stef.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* #indexVideo {
+#indexVideo {
   position: fixed;
-  right: 0%;
-  top: 0%;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0.4;
+  left: 0;
+  top: 0;
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+  opacity: 0.5;
   z-index: -1;
-} */
+}
+
+@media screen {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
 
 
 
