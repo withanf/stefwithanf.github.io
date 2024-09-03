@@ -1,43 +1,78 @@
 /* --------------- ROOT --------------- */
 
-:root {
+:root,
+[data-bs-theme=light] {
   /* new vars */
+  --writing-color: var(--bs-white);
+  --background-tint: rgba(8,60,99,0.4);
 
-  --color-primary: #4423a5;
-  --color-primary-dark: #2b1472;
-  --color-text-heading: #e7f29f;
-  --color-text-body: #f5f8e0;
-  --color-secondary: #fca88f;
-  --color-secondary-light: #f7ccbf;
-  --color-tertiary: #a7abdd;
-  --color-tertiary-light: #c6c9f1;
-  --color-neutral: #81717a;
+  color-scheme: dark;
+  --bs-body-color: #dee2e6;
+  --bs-body-color-rgb: 222, 226, 230;
+  --bs-body-bg: #083c63;
+  --bs-body-bg-rgb: 8, 60, 99;
+  --bs-emphasis-color: #fff;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-secondary-color: #dee2e6;
+  --bs-secondary-color-tint: rgba(222, 226, 230, 0.8);
+  --bs-secondary-color-rgb: 222, 226, 230;
+  --bs-secondary-bg: #343a40;
+  --bs-secondary-bg-rgb: 52, 58, 64;
+  --bs-tertiary-color: #dee2e6;
+  --bs-tertiary-color-rgb: 222, 226, 230;
+  --bs-tertiary-bg: #2b3035;
+  --bs-tertiary-bg-rgb: 43, 48, 53;
+  --bs-primary-text-emphasis: #6ea8fe;
+  --bs-secondary-text-emphasis: #a7acb1;
+  --bs-light-text-emphasis: #f8f9fa;
+  --bs-dark-text-emphasis: #dee2e6;
+  --bs-primary-bg-subtle: #031633;
+  --bs-secondary-bg-subtle: #161719;
+  --bs-light-bg-subtle: #343a40;
+  --bs-dark-bg-subtle: #1a1d20;
+  --bs-primary-border-subtle: #084298;
+  --bs-secondary-border-subtle: #41464b;
+  --bs-light-border-subtle: #495057;
+  --bs-dark-border-subtle: #343a40;
+  --bs-heading-color: inherit;
+  --bs-link-color: #6ea8fe;
+  --bs-link-hover-color: #adceff;
+  --bs-link-color-rgb: 110, 168, 254;
+  --bs-link-hover-color-rgb: 139, 185, 254;
+  --bs-code-color: #e685b5;
+  --bs-highlight-color: #dee2e6;
+  --bs-highlight-bg: #664d03;
+  --bs-border-color: #637aa1;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-form-valid-color: #75b798;
+  --bs-form-valid-border-color: #75b798;
+  --bs-form-invalid-color: #ea868f;
+  --bs-form-invalid-border-color: #ea868f;
+  --bs-list-group-active-bg: #000000;
 
+}
 
-
+[data-bs-theme=dark] {
+  /* new vars */
     --writing-color: var(--bs-white);
+    --background-tint: rgba(8,60,99,0.4);
 
-
-  
-
-
-    --background-tint: rgba(39, 20, 94, 0.4);
-
-    /* --bg-body-secondary: #161e27; */
-    --bs-body-color: var(--color-text-body);
-    /* --bs-body-color-rgb: 222, 226, 230; */
-    --bs-body-bg: var(--color-primary-dark);
-    /* --bs-body-bg-rgb: var(--color-primary-dark); */
+    color-scheme: dark;
+    --bg-body-secondary: #161e27;
+    --bs-body-color: #dee2e6;
+    --bs-body-color-rgb: 222, 226, 230;
+    --bs-body-bg: #083c63;
+    --bs-body-bg-rgb: 8, 60, 99;
     --bs-emphasis-color: #fff;
     --bs-emphasis-color-rgb: 255, 255, 255;
     --bs-secondary-color: #dee2e6;
-    /* --bs-secondary-color-rgb: 222, 226, 230; */
+    --bs-secondary-color-rgb: 222, 226, 230;
     --bs-secondary-bg: #343a40;
     --bs-secondary-bg-rgb: 52, 58, 64;
-    --bs-tertiary-color: rgba(222, 226, 230, 0.2);
-    /* --bs-tertiary-color-rgb: rgba(222, 226, 230, 0.2); */
+    --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+    --bs-tertiary-color-rgb: 222, 226, 230;
     --bs-tertiary-bg: #2b3035;
-    /* --bs-tertiary-bg-rgb: 43, 48, 53; */
+    --bs-tertiary-bg-rgb: 43, 48, 53;
     --bs-primary-text-emphasis: #6ea8fe;
     --bs-secondary-text-emphasis: #a7acb1;
     --bs-light-text-emphasis: #f8f9fa;
@@ -53,15 +88,19 @@
     --bs-heading-color: inherit;
     --bs-link-color: #6ea8fe;
     --bs-link-hover-color: #adceff;
-    /* --bs-link-color-rgb: 110, 168, 254; */
-    /* --bs-link-hover-color-rgb: 139, 185, 254; */
+    --bs-link-color-rgb: 110, 168, 254;
+    --bs-link-hover-color-rgb: 139, 185, 254;
+    --bs-code-color: #e685b5;
+    --bs-highlight-color: #dee2e6;
+    --bs-highlight-bg: #664d03;
     --bs-border-color: #637aa1;
-    /* --bs-border-color-translucent: rgba(255, 255, 255, 0.15); */
+    --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+    --bs-form-valid-color: #75b798;
+    --bs-form-valid-border-color: #75b798;
+    --bs-form-invalid-color: #ea868f;
+    --bs-form-invalid-border-color: #ea868f;
     --bs-list-group-active-bg: #000000;
-    --bs-list-group-color: #ffffff;
-    --bs-list-group-item-action: #fff;
 
-    /* fuck rounded corners, all my homies hate rounded corners */
     --bs-border-radius: 0;
     --bs-border-radius-sm: 0;
     --bs-border-radius-lg: 0;
@@ -80,11 +119,6 @@
 
 hr {
 margin: 0;
-border-color: var(--color-tertiary);
-background-image:url(/img/underline.svg),url(/img/underline-primary.svg);
-background-repeat:repeat-x,no-repeat;
-background-position: 0 105%;
-background-size: 100%;
 }
 
 .bg-logos {
@@ -101,67 +135,47 @@ background-size: 100%;
 
 /* this is for SVG handwriting titles only, not icons */
 .svg-color {
-  stroke: var(--color-text-heading);
+  stroke: var(--bs-secondary-color-tint);
 }
 
 /* this is for SVG icons */
 .icon-color {
-  fill: var(--color-text-body);
+  fill: var(--bs-secondary-color);
 }
 
 .icon-color:hover {
-  fill: var(--color-text-heading);
-  transition: all .1s ease;
-}
-
-i {
-  color: var(--color-text-body);
+  fill: white;
+  transition: all .2s ease;
 }
 
 i:hover {
-  color: var(--color-text-heading);
-  transition: all .1s ease;
+  color: white;
 }
 
 /* fonts */
-body, button, .navbar, footer, h4, h5, h6 {
+body, button {
   /* https://fonts.google.com/specimen/Rubik */
   font-family: "Rubik", system-ui;
 }
-
-h1, h2, h3,
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
+.navbar, footer {
   /* https://fonts.google.com/specimen/Anonymous+Pro */
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: it;
-  font-variation-settings:
-    "wdth" 97;
-  /* margin: 0%; */
+  font-family: "Anonymous Pro", system-ui;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-text-heading);
+h2, h3, h4 a {
+  color: white;
 }
 
-strong {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  color: var(--color-text-heading);
-}
-
-a {
-  color: var(--color-secondary);
-}
-
-a:hover {
-  color: var(--color-secondary-light);
-  transition: all .1s ease;
+h2, h3, h4 a:hover {
+  color: var(--bs-link-hover-color);
+  transition: all .2s ease;
 }
 
 /* SVG squiggle underline */
-main a:not(.btn), footer a:not(.text-body-secondary) {
+main a:not(.btn) {
   display:inline;
   background-image:url(/img/underline.svg),url(/img/underline-primary.svg);
   background-repeat:repeat-x,no-repeat;
@@ -177,46 +191,10 @@ main a:not(.btn):hover {
   text-decoration:none
 }
 
-.btn {
+.list-group, .list-group-item {
   border: none;
-}
-
-.btn-primary {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-}
-
-.btn-primary:hover, .btn-primary:active {
-  background-color: var(--color-secondary-light) !important;
-  color: var(--color-primary) !important;
-}
-
-.btn-secondary {
-  background-color: var(--color-tertiary);
-  color: var(--color-primary-dark);
-}
-
-.btn-secondary:hover, .btn-secondary:active {
-  background-color: var(--color-tertiary-light) !important;
-  color: var(--color-primary-dark) !important;
-}
-
-.btn-link {
-  color: var(--color-secondary);
-  background-image:url(/img/underline.svg),url(/img/underline-primary.svg);
-  background-repeat:repeat-x,no-repeat;
-  background-position: 0 90%;
-  background-size:680px 4px,0 0;
-  text-decoration: none;
-  transition: none;
-}
-
-.btn-link:hover, .btn-link:active, .btn-link:focus, .btn-link:focus-visible {
-  color: var(--color-secondary-light) !important;
-  background-position:0 90%;
-  background-image:url(/img/underline-primary.svg);
-  text-decoration: none;
-  transition: none;
+  border-radius: 0;
+  background-color: none;
 }
 
 .dropdown-menu {
@@ -224,10 +202,30 @@ main a:not(.btn):hover {
   border-radius: 0;
 }
 
+/* #loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+} */
+  
+/* #loading-image {
+  z-index: 100;
+} */
+
+
+
 /* --------------- INDEX PAGE --------------- */
 
 .index-background {
-  background: var(--color-primary);
+  background: var(--background-tint);
   background: url("/img/stef.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -239,7 +237,7 @@ main a:not(.btn):hover {
   top: 0;
   /* min-width: 100%; */
   /* min-height: 100%; */
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -292,29 +290,12 @@ main a:not(.btn):hover {
     overflow: hidden;
     }
 
-.list-group-item {
-  background-image: none !important;
-  color: var(--color-text-heading);
-  border: none;
-  border-bottom: 1px solid var(--color-primary);
-  border-radius: 0;
-  --bs-list-group-active-bg: var(--color-primary);
-  --bs-list-group-action-hover-bg: var(--color-primary);
-  --bs-list-group-active-border-color: var(--color-primary);
-}
 
-.list-group-item:hover {
-  color: white;
-  background: none;
-}
-    
 
 /* --------------- WORK PAGE --------------- */
 
 #logo-marquee {
   user-select: none;
-  border-top: 1px solid var(--color-primary);
-  border-bottom: 1px solid var(--color-primary);
 }
 
 .logo-container {
@@ -355,7 +336,7 @@ main a:not(.btn):hover {
 }
 
 .card {
-  --text-bg-color: var(--color-primary-dark);
+  --text-bg-color: rgba(14, 14, 94, 0.9);
   border: none;
   border-radius: 0;
   min-height: 20em;
@@ -376,14 +357,13 @@ main a:not(.btn):hover {
   padding: 1em;
   margin: 0;
   width: 100%;
-  transition: all .3s ease;
 }
 
 .card:hover {
-  --text-bg-color: var(--color-primary);
+  --text-bg-color: var(--text-bg-hover);
   background-image: var(--card-img-hover);
   color: white;
-  transition: all .3s ease;
+  transition: all .4s ease;
 }
 
 
@@ -397,7 +377,7 @@ ul.timeline {
 
 ul.timeline:before {
   content: ' ';
-  background: var(--color-tertiary);
+  background: #d4d9df;
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -413,11 +393,11 @@ ul.timeline > li {
 
 ul.timeline > li:before {
   content: ' ';
-  background: var(--color-primary-dark);
+  background: white;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid var(--color-tertiary);
+  border: 3px solid #22c0e8;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -431,5 +411,6 @@ ul.timeline > li:last-of-type {
 .timeline-date {
   color: var(--bs-body-color);
   font-weight: 100;
+  font-size: smaller;
   margin-left: 0.3em;
 }
