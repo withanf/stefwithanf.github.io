@@ -125,19 +125,18 @@ i:hover {
 
 /* fonts */
 body, button, .navbar, footer, h4, h5, h6 {
-  /* https://fonts.google.com/specimen/Rubik */
-  font-family: "Rubik", system-ui;
+  /* https://fonts.google.com/specimen/Inter */
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
 }
 
 h1, h2, h3,
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
-  /* https://fonts.google.com/specimen/Anonymous+Pro */
-  font-family: "Open Sans", sans-serif;
+  /* https://fonts.google.com/specimen/Inter */
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: it;
-  font-variation-settings:
-    "wdth" 97;
+  font-style: italic;
   /* margin: 0%; */
 }
 
@@ -146,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 strong {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   color: var(--color-text-heading);
 }
