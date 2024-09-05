@@ -13,16 +13,8 @@
   --color-tertiary-light: #c6c9f1;
   --color-neutral: #81717a;
 
-
-
     --writing-color: var(--bs-white);
-
-
-  
-
-
     --background-tint: rgba(39, 20, 94, 0.4);
-
     /* --bg-body-secondary: #161e27; */
     --bs-body-color: var(--color-text-body);
     /* --bs-body-color-rgb: 222, 226, 230; */
@@ -55,7 +47,7 @@
     --bs-link-hover-color: #adceff;
     /* --bs-link-color-rgb: 110, 168, 254; */
     /* --bs-link-hover-color-rgb: 139, 185, 254; */
-    --bs-border-color: #637aa1;
+    --bs-border-color: var(--color-primary);
     /* --bs-border-color-translucent: rgba(255, 255, 255, 0.15); */
     --bs-list-group-active-bg: #000000;
     --bs-list-group-color: #ffffff;
@@ -68,6 +60,10 @@
     --bs-border-radius-xl: 0;
     --bs-border-radius-xxl: 0;
     --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+}
+
+html {
+  font-size: 1.1em;
 }
 
 .header-bg-gradient {
@@ -97,6 +93,12 @@ background-size: 100%;
   --bs-navbar-toggler-border-radius: 0;
   --bs-navbar-toggler-focus-width: 0.1rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-brand {
+  color: var(--color-text-heading);
+  font-style: italic;
+
 }
 
 /* this is for SVG handwriting titles only, not icons */
@@ -140,6 +142,10 @@ h1, h2, h3,
   /* margin: 0%; */
 }
 
+body {
+  color: var(--color-tertiary-light);
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-heading);
 }
@@ -147,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 strong {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  color: var(--color-text-heading);
+  /* color: var(--color-text-body); */
 }
 
 a {
@@ -223,6 +229,10 @@ main a:not(.btn):hover {
   border-radius: 0;
 }
 
+
+
+
+
 /* --------------- INDEX PAGE --------------- */
 
 .index-background {
@@ -259,54 +269,10 @@ main a:not(.btn):hover {
     display: block;
   }
 }
-
-
-
-/* --------------- CASE STUDY TEMPLATE --------------- */
-
-.sticky-sidebar {
-    position: sticky;
-    top: 2em;
-}
-
-@media screen and (max-width: 768px){
-  .sticky-sidebar{
-    display: none;
-  }
-}
-
-#case-title {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    position: absolute;
-    padding: 6em 0em 0.5em 1em;
-    background: linear-gradient(0deg, var(--bs-body-bg), rgba(0,0,0,0));
-    }
-
-#case-header {
-    height: 25em;
-    position: relative;
-    margin-bottom: 4em;
-    overflow: hidden;
-    }
-
-.list-group-item {
-  background-image: none !important;
-  color: var(--color-text-heading);
-  border: none;
-  border-bottom: 1px solid var(--color-primary);
-  border-radius: 0;
-  --bs-list-group-active-bg: var(--color-primary);
-  --bs-list-group-action-hover-bg: var(--color-primary);
-  --bs-list-group-active-border-color: var(--color-primary);
-}
-
-.list-group-item:hover {
-  color: white;
-  background: none;
-}
     
+
+
+
 
 /* --------------- WORK PAGE --------------- */
 
@@ -354,7 +320,8 @@ main a:not(.btn):hover {
 }
 
 .card {
-  --text-bg-color: var(--color-primary-dark);
+  --text-bg-color: var(--color-primary);
+  color: var(--color-tertiary-light);
   border: none;
   border-radius: 0;
   min-height: 20em;
@@ -369,7 +336,7 @@ main a:not(.btn):hover {
 }
 
 .card p {
-  background-color: var(--text-bg-color);
+  background-color: var(--color-primary);
   position: absolute;
   bottom: 0;
   padding: 1em;
@@ -379,11 +346,13 @@ main a:not(.btn):hover {
 }
 
 .card:hover {
-  --text-bg-color: var(--color-primary);
+  --text-bg-color: var(--color-text-heading);
   background-image: var(--card-img-hover);
-  color: white;
+  color: var(--color-text-body);
   transition: all .3s ease;
 }
+
+
 
 
 
@@ -431,4 +400,53 @@ ul.timeline > li:last-of-type {
   color: var(--bs-body-color);
   font-weight: 100;
   margin-left: 0.3em;
+}
+
+
+
+
+
+/* --------------- CASE STUDY TEMPLATE --------------- */
+
+.sticky-sidebar {
+  position: sticky;
+  top: 2em;
+}
+
+@media screen and (max-width: 768px){
+.sticky-sidebar{
+  display: none;
+}
+}
+
+#case-title {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 6em 0em 0.5em 1em;
+  background: linear-gradient(0deg, var(--bs-body-bg), rgba(0,0,0,0));
+  }
+
+#case-header {
+  height: 25em;
+  position: relative;
+  margin-bottom: 4em;
+  overflow: hidden;
+  }
+
+.list-group-item {
+background-image: none !important;
+color: var(--color-text-heading);
+border: none;
+border-bottom: 1px solid var(--color-primary);
+border-radius: 0;
+--bs-list-group-active-bg: var(--color-primary);
+--bs-list-group-action-hover-bg: var(--color-primary);
+--bs-list-group-active-border-color: var(--color-primary);
+}
+
+.list-group-item:hover {
+color: white;
+background: none;
 }
