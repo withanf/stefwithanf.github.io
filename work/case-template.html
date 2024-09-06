@@ -33,67 +33,29 @@
     <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 
     <!-- navigation -->
-    <header class="mb-auto"><nav class="navbar navbar-expand-lg header-bg-gradient p-3">
-      <div class="container-fluid mb-0">
-        <a class="navbar-brand" aria-current="page" href="/index.html">Stef with an F</a>
+    <header class="mb-auto"><nav class="navbar nav-bg navbar-expand-lg p-3">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="/index.html">Stef with an F</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list fs-2"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-0 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/work.html">Work</a>
+              <a class="nav-link" aria-current="page" href="/work.html">Work</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Fun
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/work/case-template.html">Case Studies</a></li>
-                <li><a class="dropdown-item" href="#">Hobbies</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:stefaniesequeira@pm.me" target="_blank">E-mail</a>
+            </li>
           </ul>
-          <!-- color mode setting, disabled for now -->
-          <!-- <div class="dropdown bd-mode-toggle">
-            <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-                    id="bd-theme"
-                    type="button"
-                    aria-expanded="false"
-                    data-bs-toggle="dropdown"
-                    aria-label="Toggle theme (auto)">
-              <span id="bd-theme-text" class="bi my-1 theme-icon-active"><use>Site Theme</use></span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                  <i class="bi bi-sun pe-2"></i>
-                  Light
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                  <i class="bi bi-moon pe-2"></i>
-                  Dark
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                  <i class="bi bi-circle-half pe-2"></i>
-                  Auto
-                  <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-                </button>
-              </li>
-            </ul>
-          </div> -->
         </div>
+
       </div>
     </nav></header>
 
@@ -112,8 +74,8 @@
                 <!-- I literally have to nest this div to make this sticky otherwise it will just scroll over the nav -->
                 <div class="sticky-sidebar">
                     <div>
-                        <h2>Project Info</h2>
-                        <ul class="list-unstyled">
+                        <h4>Project Info</h4>
+                        <ul class="list-unstyled small">
                             <li><strong>Client:</strong> <span>XYZ Corp</span></li>
                             <li><strong>Role:</strong> <span>Lead UX Designer</span></li>
                             <li><strong>Skills:</strong> <span>Information architecture, journey mapping, prototyping</span></li>
@@ -122,7 +84,7 @@
                             <li><a href="#">Visit Website</a></li>
                         </ul>
                     </div>
-                    <div id="subnav" class="list-group pt-5">
+                    <div id="subnav" class="list-group list-group-flush pt-1">
                         <a class="list-group-item list-group-item-action" href="#list-item-1">Background</a>
                         <a class="list-group-item list-group-item-action" href="#list-item-2">Ideation</a>
                         <a class="list-group-item list-group-item-action" href="#list-item-3">Prototyping</a>
@@ -133,7 +95,7 @@
             </div>
         
             <!-- this makes the sidebar thing track where you're going, remove this if it's a private case -->
-            <div data-bs-spy="scroll" data-bs-target="#subnav" data-bs-smooth-scroll="true" class="col-md-8 scrollspy border-start">
+            <div data-bs-spy="scroll" data-bs-target="#subnav" data-bs-smooth-scroll="true" class="col-md-9 scrollspy border-start">
 
                 <h2 id="list-item-1">Background</h2>
                     <p>Page content goes here. Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse ex nam quam nec aliquet imperdiet semper. Porttitor varius hac laoreet habitasse aptent. Arcu risus nec fames platea facilisis. Luctus integer maecenas; euismod ullamcorper eros donec placerat. Arcu sociosqu magna dapibus consectetur montes risus lacus auctor parturient. Habitasse sodales nec consectetur, <a href="#" target="_blank">arcu bibendum enim</a>.</p>
@@ -174,7 +136,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="container-fluid d-flex flex-wrap justify-content-between p-3 pt-5 mt-auto footer-bg-gradient">
+    <footer class="nav-bg container-fluid d-flex flex-wrap justify-content-between p-4 mt-auto">
       <div class="col-md-4 d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-body-secondary">&copy; Stefanie. <a href="https://github.com/withanf/withanf.github.io/issues" target="_blank">Report a bug</a></span>
       </div>
