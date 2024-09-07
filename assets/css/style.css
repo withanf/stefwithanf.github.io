@@ -333,6 +333,7 @@ main a:not(.btn):hover {
   background-image: var(--card-img);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card a, h3 {
@@ -347,14 +348,12 @@ main a:not(.btn):hover {
   padding: 1em;
   margin: 0;
   width: 100%;
-  /* transition: all .3s ease; */
 }
 
 .card:hover {
   --text-bg-color: var(--color-text-heading);
   background-image: var(--card-img-hover);
   color: var(--color-text-body);
-  /* transition: all .3s ease; */
 }
 
 #jumbo {
