@@ -464,7 +464,6 @@ ul.timeline > li:last-of-type {
   padding: 1em;
   margin: 1em;
   background: var(--color-primary-dark);
-  color: var(--color-text-heading);
   }
 
 #case-header {
