@@ -387,8 +387,10 @@ main a:not(.btn):hover {
   position: absolute;
   padding: 1em;
   margin: 1em;
-  background: url(/img/site/jumbo.svg), var(--jumbo-bg-color);
+  background: var(--jumbo-bg-color);
   background-size: cover;
+  mask: url(/img/site/jumbo.svg);
+  mask-size: cover;
   }
 
   #jumbo:hover {
