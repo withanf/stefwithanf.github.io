@@ -404,7 +404,7 @@ main a:not(.btn):hover {
   .value {
     background: var(--rect) no-repeat;
     background-size: contain;
-    height: 350px;
+    min-height: 350px;
   }
 
   .yellow {
