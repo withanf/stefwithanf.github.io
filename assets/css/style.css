@@ -6,6 +6,7 @@
   --color-primary: #4423a5;
   --color-primary-dark: #2b1472;
   --color-primary-darker: #1d0f47;
+  --color-primary-darker-tint: linear-gradient(#1d0f47ff, #1d0f4700);
   --color-text-heading: #e7f29f;
   --color-text-body: #f5f8e0;
   --color-secondary: #fca88f;
