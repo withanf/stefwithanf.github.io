@@ -67,6 +67,11 @@ html {
   font-size: 1.1em;
 }
 
+.btn-close {
+  --bs-btn-close-color: var(--color-tertiary);
+  --bs-btn-close-bg: var(--color-tertiary);
+}
+
 .hr {
   width: 100%;
   padding-top: 1em;
@@ -108,7 +113,6 @@ html {
 .navbar-brand {
   color: var(--color-text-heading);
   font-style: italic;
-
 }
 
 .nav-link {
@@ -118,17 +122,19 @@ html {
 
 /* this is for SVG handwriting titles only, not icons */
 .svg-color {
+  animation: fade-in 0.5s;
   stroke: var(--color-text-heading);
 }
 
 /* this is for SVG icons */
 .icon-color {
   fill: var(--color-tertiary);
+  transition: transform .2s;
 }
 
 .icon-color:hover {
   fill: var(--color-tertiary-light);
-  transition: .1s ease;
+  transition: all .1s ease;
 }
 
 i:hover {
@@ -138,6 +144,10 @@ i:hover {
 
 .socials {
   color: var(--color-tertiary);
+}
+
+.socials:hover {
+  cursor: pointer;
 }
 
 /* fonts */
@@ -225,6 +235,8 @@ main a:not(.btn):hover {
   color: var(--color-primary-dark) !important;
 }
 
+
+
 .btn-link {
   color: var(--color-secondary);
   background-image:url(/img/underline.svg),url(/img/underline-primary.svg);
@@ -251,6 +263,63 @@ main a:not(.btn):hover {
 .custom-tooltip {
   --bs-tooltip-bg: none;
   --bs-tooltip-color: var(--color-text-heading);
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.01);
+}
+
+
+
+
+/* --------------- ANIMATIONS --------------- */
+
+/* slide-in is used for logo marquee only */
+@keyframes slide-in {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.slide-in {
+  animation: fade-zoom 0.5s; 
+}
+
+/* fade-zoom is used for logo marquee only */
+@keyframes fade-zoom {
+  0% {
+    opacity: 0;
+    transform: scale(90%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-zoom {
+  animation: fade-zoom 0.5s;
+}
+
+/* fade-up is used for content blocks */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    translate: 0 2.5em;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  animation: fade-up 1s;
 }
 
 
@@ -303,7 +372,7 @@ main a:not(.btn):hover {
 .logo-container {
   overflow: hidden;
   .slider {
-    animation: slidein 30s linear infinite;
+    animation: slide-in 30s linear infinite;
     white-space: nowrap;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -312,28 +381,10 @@ main a:not(.btn):hover {
       margin: 0px 0;
       .fab {
         padding-right: 2em;
-        animation: fade-in 0.5s 
+        animation: fade-zoom 0.5s 
           cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
-  }
-}
-
-@keyframes slidein {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -367,7 +418,6 @@ main a:not(.btn):hover {
   --text-bg-color: var(--color-primary);
   background-image: var(--card-img-hover);
   color: white;
-  transition: .5s ease;
 }
 
 #jumbo {
@@ -398,13 +448,34 @@ main a:not(.btn):hover {
     --jumbo-bg-color: var(--color-primary);
     background-color: #000000;
     background-image: var(--card-img-hover);
-    transition: .5s ease;
   }
 
   .value {
     background: var(--rect) no-repeat;
     background-size: contain;
     min-height: 350px;
+    max-width: 25%
+  }
+
+  @media screen and (max-width: 1400px){
+    h4 {
+      font-size: 1.2em;
+     }
+    .desc {
+      /* display: none; */
+      font-size: 0.9em;
+    }
+  }
+
+  @media screen and (max-width: 1080px){
+    .value {
+      max-width: 50%;
+      min-height: 0;
+      background-size: cover;
+    }
+    .desc {
+      display: none;
+    }
   }
 
   .yellow {
