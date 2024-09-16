@@ -85,7 +85,7 @@ html {
   background-repeat:repeat-y,no-repeat;
 }
 
-.vr2 {
+.vr3 {
   background-image: url(/img/site/vr2.svg);
   background-repeat:repeat-y,no-repeat;
 }
@@ -236,8 +236,6 @@ main a:not(.btn):hover {
   color: var(--color-primary-dark) !important;
 }
 
-
-
 .btn-link {
   color: var(--color-secondary);
   background-image:url(/img/underline.svg),url(/img/underline-primary.svg);
@@ -272,6 +270,10 @@ main a:not(.btn):hover {
 
 .zoom:hover {
   transform: scale(1.01);
+}
+
+.float-md-start, .float-md-end, .float-md-none {
+  padding: 1em;
 }
 
 
