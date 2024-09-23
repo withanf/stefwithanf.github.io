@@ -98,9 +98,8 @@
                     <div id="subnav" class="list-group list-group-flush pt-1">
                         <a class="list-group-item list-group-item-action" href="#list-item-1">Background</a>
                         <a class="list-group-item list-group-item-action" href="#list-item-2">Research and Discovery</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">Ideation and Design</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">Implementation</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-5">Lessons Learned</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Design and Implementation</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">Lessons Learned</a>
                     </div>
                 </div>
             </div>
@@ -116,51 +115,92 @@
                     <p>I needed a portfolio website. Website builders like Squarespace and Wix are too limiting. Framer and Webflow are handy, but not necessarily useful outside of this context. On top of that, these options were expensive because of features I didn't need (e.g., CMS). I had a microsite that was slow-loading with bad UX. So how might I launch my portfolio in a way that's fast, effective, and cheap?</p>
 
                     <p>My success criteria:</p>
-                    <ul>
+                    <div class="row">
+                      <div class="col">
+                        <ul>
+                          <li>Fully populated with content</li>
+                          <li>Responsive</li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul>
+                          <li>Adheres to WCAG 2.0 AA standards</li>
+                          <li>Improved performance and SEO</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- <ul>
                       <li>Fully populated with content</li>
                       <li>Responsive</li>
                       <li>Adheres to WCAG 2.0 AA standards</li>
                       <li>Improved performance and SEO</li>
-                    </ul>
-
-                    <p>Easy, right?</p>
+                      <p>Let's get into it!</p>
+                    </ul> -->
 
                 <h2 id="list-item-2">Research and Discovery</h2>
-                  <p>Looking Around</p>
-                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto float-md-end zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
-                  <h3>Personas</h3>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque egestas dapibus lobortis feugiat est nisi sollicitudin. Facilisi congue morbi suspendisse laoreet curabitur pellentesque adipiscing potenti. Ultricies quis consequat nisl taciti lorem sagittis. Erat rhoncus nulla; bibendum etiam lacinia dapibus consectetur pulvinar. Tempus ad curae cras suspendisse dui luctus vel tellus.
-                    <br>
-                    Lacus interdum cubilia mus pharetra condimentum velit. Vestibulum torquent dolor nec blandit imperdiet vel ut aliquam. Lectus aenean natoque class, semper curabitur cras. Massa gravida nisi aliquam elementum tempus maecenas scelerisque fames. Condimentum fusce quam magna diam morbi eu. Potenti at mauris gravida aptent tristique a ut taciti. Elementum orci finibus nulla id aliquam diam. Ipsum ad class etiam elementum, fusce egestas urna. Facilisi dapibus class gravida integer inceptos.
-                    <br>
-                    Aptent ad massa orci praesent, lectus est. Dapibus elit parturient varius per luctus dignissim purus. Dis auctor natoque dictumst urna tincidunt tempor. Quis condimentum risus morbi vestibulum montes dignissim. Consectetur magnis fames dapibus rutrum metus id. Nascetur litora facilisis elit facilisis cursus sollicitudin habitant.</p>
-                
-                
-                <h2 id="list-item-3">Ideation and Design</h2>
+                  
+                    <div class="row">
+
+                      <div class="col">
+
+                        <h3>Issues with My Previous Site</h3>
+                          <p>I previously had a microsite with several issues, boiling down to me not having a clear vision and not understanding the underlying code.</p>
+
+                          <p class="pb-4">The other Stefanie Sequeira (a psychologist) was showing up above me in search results, and the Lighthouse performance score was [number]/100.</p>
+                        
+                        <h3>Tailoring to my Audience</h3>
+
+                          <p>InVision (RIP) wrote an article about <a href="#" target="_blank">portfolio audience archetypes</a>, which I used to guide my design:</p>
+
+                          <p>
+                            <strong>Heather</strong>, the recruiter. She needs a great first impression.
+                          </p>
+
+                          <p>
+                            <strong>Latoya</strong>, the hiring manager. She needs to see process and skills.
+                          </p>
+
+                          <p class="pb-3">
+                            <strong>Penelope</strong>, the designer. She needs to see the personality behind the pictures.
+                          </p>
+
+                      </div>
+
+                      <div class="col">
+                        <!-- picture of everybody -->
+                      </div>
+
+                    </div>
+
                   <h3>Anti-moodboard</h3>
                     <p>I wasn't sure what I wanted, but I knew what I <em>didn't</em> want. A concpt I learned from <a href="">Figma's 2021 Config conference</a> was the concept of an anti-moodboard:</p>
 
-                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto d-block zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
+                    <div class="row pb-3">
+                      <div class="col">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a>
+                      </div>
+                      <div class="col">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a>
+                      </div>
+                    </div>
 
-                    <p>Based on this, I started to narrow down more specific ideas:</p>
+                <h2 id="list-item-3">Design and Implementation</h2>
 
-                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto d-block zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
-                    
                   <h3>Wireframes</h3>
-                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto float-md-end zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
                     <p>Blah blah words words here</p>
+                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto d-block zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
 
-                <h2 id="list-item-4">Design and Implementation</h2>
                   <h3>Style guide</h3>
                     <p><a href="#" data-bs-toggle="modal" data-bs-target="#lightbox-1"><img src="..\img\test.jpg" class="img-fluid mx-auto float-md-end zoom" alt="You know, every frame of this movie looks like someone's last known photograph." loading="lazy"></a></p>
                     <p>Blah blah words words here</p>
 
                   <h3>Site development</h3>
-                      <p>I have HTML and CSS experience to begin with thanks to college, MySpace, and Neopets, but it was surface-level. I found several great resources, including the tutorials on <a href="https://internetingishard.netlify.app/" target="_blank">Interneting is Hard</a> to learn beyond the basics. Once I felt I had a solid foundation, I decided on using <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to accelerate development.</p>
+                      <p>I have HTML and CSS experience to begin with thanks to college, MySpace, and Neopets, but it was surface-level. I found several great resources, including the tutorials on <a href="https://internetingishard.netlify.app/" target="_blank">Interneting is Hard</a> to learn beyond the basics. Once I felt I had a solid foundation, I decided on <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to accelerate development.</p>
                       
                       <p>As for hosting, I already had a Github account thanks to the game jams I participate in, and Github Pages are free with SSL built in. Perfect!</p>
 
-                <h2 id="list-item-5">Lessons Learned</h2>
+                <h2 id="list-item-4">Lessons Learned</h2>
                     <p>You're reading this right now, so I consider this a success.</p>
                     <!-- column content. https://getbootstrap.com/docs/5.3/layout/columns/ -->
                     <div class="row">
