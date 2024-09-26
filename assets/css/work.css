@@ -75,6 +75,7 @@ h2:first-of-type {
     background-image: var(--card-img);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   
   #jumbo-title {
