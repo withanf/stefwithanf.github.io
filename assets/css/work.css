@@ -127,3 +127,47 @@ h2:first-of-type {
   .yellow {
     color: var(--color-text-heading);
   }
+
+  /* --------------- CASE STUDY TEMPLATE --------------- */
+
+.sticky-sidebar {
+  position: sticky;
+  top: 2em;
+}
+
+@media screen and (max-width: 768px){
+.sticky-sidebar{
+  display: none;
+}
+}
+
+#case-title {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 1em;
+  margin: 1em;
+  background: #1e192ef5;
+  }
+
+#case-header {
+  height: 25em;
+  position: relative;
+  margin-bottom: 4em;
+  overflow: hidden;
+  }
+
+.list-group-item {
+background-image: none !important;
+color: var(--color-text-heading);
+--bs-list-group-active-bg: var(--color-primary);
+--bs-list-group-action-hover-bg: var(--color-primary);
+--bs-list-group-active-border-color: var(--color-primary);
+padding-left: 0.5em;
+font-size: medium;
+}
+
+.list-group-item:hover {
+color: white;
+background: none;
+}
