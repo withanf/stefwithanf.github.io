@@ -135,10 +135,22 @@ h2:first-of-type {
   top: 2em;
 }
 
-@media screen and (max-width: 768px){
-.sticky-sidebar{
+.mobile-only{
   display: none;
 }
+
+@media screen and (max-width: 768px){
+  .sticky-sidebar{
+    display: none;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+  .mobile-only{
+    display: block;
+  }
 }
 
 #case-title {
